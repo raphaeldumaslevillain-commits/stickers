@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000"><meta name="description" content="La planche de stickers holographiques Digital Brand Makers, sous tous les angles.">
+<title>DBM — Stickers holographiques</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23000'/%3E%3Ctext x='6' y='24' fill='%23FFEE9B' font-family='Georgia' font-size='24'%3ED%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="./style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+<script type="module" src="./app.js"></script>
+</head>
+<body>
+<header><img class="logo" src="./assets/logo.svg" alt="Digital Brand Makers"><div class="edition"><span>STICKER KIT</span><span>A5 · 148 × 210 mm</span></div></header>
+<main id="viewer" aria-label="Visionneuse 3D de la planche d’adhésifs" tabindex="0"><div id="loading" role="status">La planche arrive…</div></main>
+<div class="sheet-meta"><span id="view-name">La planche</span><span class="finish"><i></i>Holographique</span></div>
+<div class="view-actions"><button id="reset" title="Revenir à la vue de départ" aria-label="Revenir à la vue de départ"><svg viewBox="0 0 24 24"><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/></svg></button><button id="zoom-in" aria-label="Zoomer"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></svg></button><button id="zoom-out" aria-label="Dézoomer"><svg viewBox="0 0 24 24"><path d="M5 12h14"/></svg></button></div>
+<footer><div class="toolbar" role="group" aria-label="Affichage des calques">
+<button data-layer="backing" aria-pressed="true"><span class="eye"></span><span>Fond de planche</span></button>
+<button data-layer="bleed" aria-pressed="false"><span class="eye"></span><span>Fonds perdus</span></button>
+<button data-layer="cut" aria-pressed="false"><span class="eye"></span><span>CutContour</span></button>
+<button data-layer="holo" aria-pressed="true"><span class="eye"></span><span>Holographie</span></button>
+</div><p class="hint" id="hint">Glisse pour tourner <span>·</span> Molette pour zoomer</p></footer>
+<div id="selection" hidden><span id="selection-name"></span><button id="unselect">Tout afficher <span>×</span></button></div>
+<noscript>Active JavaScript pour explorer la planche en 3D.</noscript>
+</body></html>
